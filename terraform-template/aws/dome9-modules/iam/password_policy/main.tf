@@ -4,7 +4,7 @@ resource "aws_iam_account_password_policy" "strict" {
   password_reuse_prevention      = 5
   require_lowercase_characters   = true
   require_numbers                = false
-  require_uppercase_characters   = false
+  require_uppercase_characters   = true
   require_symbols                = false
   allow_users_to_change_password = true
 }
