@@ -85,7 +85,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "main" {
   instances                       = 3
   admin_username                  = "adminuser"
   admin_password                  = "P@ssw0rd1234!"
-  disable_password_authentication = false
+  disable_password_authentication = true
   health_probe_id                 = azurerm_lb_probe.main.id
   upgrade_mode                    = "Rolling"
 
