@@ -28,7 +28,7 @@
 	 <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxrs</artifactId>
-            <version>2.3.10.final-redhat-2</version>
+            <version>3.0.20</version>
         </dependency>
 
         <!-- slf4j-log4j12 -->
