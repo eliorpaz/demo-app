@@ -292,7 +292,7 @@ resource "aws_iam_role_policy" "instance" {
 resource "aws_alb_target_group" "test" {
   name     = "tf-example-ecs-ghost"
   port     = 8080
-  protocol = "HTTP"
+  protocol = "HTTPS"
   vpc_id   = "${aws_vpc.main.id}"
 }
 
