@@ -10,7 +10,7 @@ resource "aws_db_instance" "default" {
   password               = "${var.password}"
   vpc_security_group_ids = ["${aws_security_group.default.id}"]
   db_subnet_group_name   = "${aws_db_subnet_group.default.id}"
-  publicly_accessible    = true
+  publicly_accessible    = false
 }
 
 resource "aws_db_subnet_group" "default" {
